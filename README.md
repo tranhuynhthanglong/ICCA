@@ -75,8 +75,12 @@ Please check the source UiPath project in this folder [Simple LUIS Query Classif
 Uipath Salesforce Lightning Connector: https://go.uipath.com/component/connector-for-salesforce-lightning-platform
 BalaReva.Excel.Activities: https://gallery.uipath.com/packages/BalaReva.Excel.Activities
 ## Authors
-Long (Leon) Tran - Design / Development / Production / etc
-Tuan Pham - LUIS trainer / etc
+- Long (Leon) Tran - Design / Development / Production / etc
+- Tuan Pham - LUIS trainer / etc
+- Thu Duong - Development
+- Viet Pham - Development
+- Cham Le - Development
+- Phuong Nguyen - Team leader
 ## License
 This project is licensed under the Apache License 2.0 - see the ![LICENSE](https://github.com/tranhuynhthanglong/ICCA/blob/master/LICENSE) file for details.
 
