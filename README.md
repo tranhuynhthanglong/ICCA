@@ -9,7 +9,7 @@
 
 Please see the Introduction Youtube video
 
-[![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
+[![Everything Is AWESOME](https://img.youtube.com/vi/uCOiIYbV8W0/0.jpg)](https://youtu.be/uCOiIYbV8W0 "Everything Is AWESOME")
 
 ## Getting Started
 To get started with the ICCA Activity Pack, you'll need the followings:
