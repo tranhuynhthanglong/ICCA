@@ -48,7 +48,8 @@ If you are not familar with Config fle and Orchestrator Assets, we recommend you
 3. IMAP mail classification: reading your email via IMAP protocol and send mail content to LUIS to classify the type of mail.
 4. Outlook to Salesforce classification: reading your Outlook mailbox and send mail content to LUIS to classify the type of mail. Then, auto creating a new case on Salesforce with "classified type" in "Type" field. If the email is empty or a client's reply to an existing case, it will be skipped.
 5. IMAP to Salesforce classification: reading your email via IMAP protocol and send mail content to LUIS to classify the type of mail. Then, auto creating a new case on Salesforce with "classified type" in "Type" field. If the email is empty or a client's reply to an existing case, it will be skipped.
-6. Salesforce case classification: when your Salesforce receives cases from different sources such as: email, phone, web, especially if Email-to-Case or Web-to-Case function are enable, you can use this activity to classify the "Type" of new and unclassified cases.
+6. Salesforce case classification: suitable if your Salesforce receives cases from different sources such as email, phone, web, etc., especially if Email-to-Case or Web-to-Case function is enabled, you can use this activity to classify the "Type" of new and unclassified cases.
+
 ### Activity input arguements
 Please have a look at the activity input arguements:
 
