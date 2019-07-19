@@ -8,6 +8,7 @@ Salesforce Integration: facilitating Open Cases in Salesforce Lightning Platform
 Automatically Categorizes: new cases and existing cases in Salesforce. 
 
 Please see the Introduction Youtube video
+
 [![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
 
 ## Getting Started
