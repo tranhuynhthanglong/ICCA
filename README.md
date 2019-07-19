@@ -30,4 +30,7 @@ The repository contains 3 folders:
 2. Simple LUIS Query Classification: it contains our source UiPath project for each activity in the ICCA package.
 3. ICCA Activity Package: it contains our ICCA packages named "Simple_LUIS_Query_Classification.1.0.1-alpha.5.nupkg".
 
-### Working with the activity
+## Working with the activity
+
+
+![Activity screenshot](https://octodex.github.com/images/yaktocat.png)
