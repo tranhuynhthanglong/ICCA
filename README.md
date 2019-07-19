@@ -80,7 +80,7 @@ BalaReva.Excel.Activities: https://gallery.uipath.com/packages/BalaReva.Excel.Ac
 - Thu Duong - Development
 - Viet Pham - Development
 - Cham Le - Development
-- Phuong Nguyen - Team leader
+- Phuong Nguyen - Project Management
 ## License
 This project is licensed under the Apache License 2.0 - see the ![LICENSE](https://github.com/tranhuynhthanglong/ICCA/blob/master/LICENSE) file for details.
 
