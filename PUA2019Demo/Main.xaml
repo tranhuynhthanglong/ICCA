@@ -1,0 +1,160 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="572,2160" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:s1="clr-namespace:Simple_LUIS_Query_Classification;assembly=Simple_LUIS_Query_Classification" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence sap:VirtualizedContainerService.HintSize="532,2040" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="ResultListText" />
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="Config" />
+      <Variable x:TypeArguments="sd:DataTable" Name="ResultList" />
+      <Variable x:TypeArguments="x:String" Name="LUIS_URL" />
+      <Variable x:TypeArguments="x:String" Name="OutlookAccount" />
+      <Variable x:TypeArguments="ss:SecureString" Name="GmailPassword" />
+      <Variable x:TypeArguments="x:String" Name="GmailUsername" />
+      <Variable x:TypeArguments="x:Int32" Name="GmailPort" />
+      <Variable x:TypeArguments="x:String" Name="GmailServer" />
+      <Variable x:TypeArguments="x:String" Name="MailFolder" />
+      <Variable x:TypeArguments="x:String" Name="Action" />
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:Int32)" Name="ActionRef" />
+      <Variable x:TypeArguments="x:String" Name="SalesforceConsumerKey" />
+      <Variable x:TypeArguments="ss:SecureString" Name="SalesforceConsumerSecret" />
+      <Variable x:TypeArguments="ss:SecureString" Name="SalesforceSecurityToken" />
+      <Variable x:TypeArguments="ss:SecureString" Name="SalesforcePassword" />
+      <Variable x:TypeArguments="x:String" Name="SalesforceUsername" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="493.6,92.8" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Please select one process that you want to continue:" Options="[{&quot;IMAP mail classification&quot;,&quot;IMAP to Salesforce classification&quot;,&quot;Salesforce case classification&quot;}]" Title="Action selection">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[Action]</OutArgument>
+      </ui:InputDialog.Result>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InputDialog>
+    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="493.6,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="InitAllSettings.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_ConfigFile">Config.xlsx</InArgument>
+        <InArgument x:TypeArguments="s:String[]" x:Key="in_ConfigSheets">[{"Settings","Constants"}]</InArgument>
+        <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="out_Config">[Config]</OutArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <Sequence sap2010:Annotation.AnnotationText="Description: Collecting input information from Orchestrator and Config file." DisplayName="Collecting config data" sap:VirtualizedContainerService.HintSize="493.6,871.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="[Config(&quot;LUIS_URL&quot;).ToString]" DisplayName="Get LUIS endpoint URL" sap:VirtualizedContainerService.HintSize="259.2,22.4" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+        <ui:GetRobotAsset.Value>
+          <OutArgument x:TypeArguments="x:String">[LUIS_URL]</OutArgument>
+        </ui:GetRobotAsset.Value>
+      </ui:GetRobotAsset>
+      <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="[Config(&quot;Outlook_account&quot;).ToString]" DisplayName="Get Outlook Account" sap:VirtualizedContainerService.HintSize="259.2,22.4" sap2010:WorkflowViewState.IdRef="GetRobotAsset_2">
+        <ui:GetRobotAsset.Value>
+          <OutArgument x:TypeArguments="x:String">[OutlookAccount]</OutArgument>
+        </ui:GetRobotAsset.Value>
+      </ui:GetRobotAsset>
+      <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[Config(&quot;Gmail_credential&quot;).ToString]" DisplayName="Get Gmail Credential" sap:VirtualizedContainerService.HintSize="259.2,22.4" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[GmailPassword]" Username="[GmailUsername]" />
+      <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[Config(&quot;Salesforce_Credential&quot;).ToString]" DisplayName="Get SF Simple Credential" sap:VirtualizedContainerService.HintSize="259.2,22.4" sap2010:WorkflowViewState.IdRef="GetRobotCredential_2" Password="[SalesforcePassword]" Username="[SalesforceUsername]" />
+      <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[Config(&quot;SalesforceConsumer_Credential&quot;).ToString]" DisplayName="Get Consumer Credential" sap:VirtualizedContainerService.HintSize="259.2,22.4" sap2010:WorkflowViewState.IdRef="GetRobotCredential_3" Password="[SalesforceConsumerSecret]" Username="[SalesforceConsumerKey]" />
+      <ui:GetRobotCredential TimeoutMS="{x:Null}" Username="{x:Null}" AssetName="[Config(&quot;SalesforceSecurityToken&quot;).ToString]" DisplayName="Get SF Security Token" sap:VirtualizedContainerService.HintSize="259.2,22.4" sap2010:WorkflowViewState.IdRef="GetRobotCredential_4" Password="[SalesforceSecurityToken]" />
+      <Assign sap:VirtualizedContainerService.HintSize="259.2,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[MailFolder]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[Config("Mail_Checking_Folder").ToString]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="259.2,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[GmailServer]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[Config("Gmail_server").ToString]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="259.2,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:Int32">[GmailPort]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:Int32">[integer.Parse(Config("Gmail_port").ToString)]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="259.2,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+        <Assign.To>
+          <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Int32)">[ActionRef]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Int32)">[New Dictionary(Of String, Int32) From {{"IMAP mail classification",1},{"IMAP to Salesforce classification",2},{"Salesforce case classification",3}}]</InArgument>
+        </Assign.Value>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Assign>
+    </Sequence>
+    <Switch x:TypeArguments="x:Int32" DisplayName="Switch" Expression="[ActionRef(Action)]" sap:VirtualizedContainerService.HintSize="493.6,610.4" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+      <s1:IMAP_mail_classification ExcelOutputPath="{x:Null}" x:Key="1" ExcelOutput="True" sap:VirtualizedContainerService.HintSize="216,22.4" sap2010:WorkflowViewState.IdRef="IMAP_mail_classification_1" LUIS_URL="[LUIS_URL]" MailAddress="[GmailUsername]" MailFolder="[MailFolder]" MailList="[ResultList]" MailPassword="[GmailPassword]" MailPort="[GmailPort]" MailServer="[GmailServer]" />
+      <s1:IMAP_to_Salesforce_classification ExcelOutputPath="{x:Null}" MailList="{x:Null}" x:Key="2" ExcelOutput="True" sap:VirtualizedContainerService.HintSize="216,22.4" sap2010:WorkflowViewState.IdRef="IMAP_to_Salesforce_classification_1" LUIS_URL="[LUIS_URL]" MailAddress="[GmailUsername]" MailFolder="[MailFolder]" MailPassword="[GmailPassword]" MailPort="[GmailPort]" MailServer="[GmailServer]" SalesforceConsumerKey="[SalesforceConsumerKey]" SalesforceConsumerSecret="[SalesforceConsumerSecret]" SalesforcePassword="[SalesforcePassword]" SalesforceSecurityToken="[SalesforceSecurityToken]" SalesforceUsername="[SalesforceUsername]" />
+      <s1:Salesforce_case_classification ExcelOutputPath="{x:Null}" x:Key="3" CaseList="[ResultList]" ExcelOutput="True" sap:VirtualizedContainerService.HintSize="216,22.4" sap2010:WorkflowViewState.IdRef="Salesforce_case_classification_1" LUIS_URL="[LUIS_URL]" SalesforceConsumerKey="[SalesforceConsumerKey]" SalesforceConsumerSecret="[SalesforceConsumerSecret]" SalesforcePassword="[SalesforcePassword]" SalesforceSecurityToken="[SalesforceSecurityToken]" SalesforceUsername="[SalesforceUsername]" />
+    </Switch>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="493.6,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[ResultListText]" />
+    <ui:OutputDataTable DataTable="[ResultList]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="493.6,22.4" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[ResultListText]" />
+  </Sequence>
+</Activity>

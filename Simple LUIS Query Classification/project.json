@@ -1,0 +1,39 @@
+{
+  "name": "Simple_LUIS_Query_Classification",
+  "description": "This activities will help you send a text query to your own Microsoft LUIS AI point for classify that query.",
+  "main": "LUIS classification.xaml",
+  "dependencies": {
+    "BalaReva.Excel.Activities": "2019.1.1",
+    "UiPath.Credentials.Activities": "1.1.6479.13204",
+    "UiPath.Excel.Activities": "2.6.2",
+    "UiPath.Mail.Activities": "1.5.0",
+    "UiPath.System.Activities": "19.6.0",
+    "UiPath.UIAutomation.Activities": "19.6.0",
+    "UiPath.WebAPI.Activities": "1.4.2",
+    "UiPathTeam.Salesforce.Lightning_Platform.Activities": "1.0.0.787"
+  },
+  "webServices": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "19.7.0.0",
+  "projectVersion": "1.0.1-alpha.9",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "isPausable": true,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Library",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    }
+  },
+  "expressionLanguage": "VisualBasic"
+}
