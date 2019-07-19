@@ -9,7 +9,8 @@
 
 Please see the Introduction Youtube video
 
-[![Everything Is AWESOME](https://img.youtube.com/vi/uCOiIYbV8W0/0.jpg)](https://youtu.be/uCOiIYbV8W0 "Everything Is AWESOME")
+[![Happy automation](https://img.youtube.com/vi/uCOiIYbV8W0/0.jpg)](https://youtu.be/uCOiIYbV8W0 "Happy automation")
+[Introduction slide](https://github.com/tranhuynhthanglong/ICCA/blob/master/ABeam_PowerUp2019.pptx "Introduction slide")
 
 ## Getting Started
 To get started with the ICCA Activity Pack, you'll need the followings:
