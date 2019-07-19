@@ -12,7 +12,7 @@ Please see the Introduction Youtube video
 [![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
 
 ## Getting Started
-To get started with the DocuSign Activiy Pack, you'll need the followings:
+To get started with the ICCA Activity Pack, you'll need the followings:
 1. Salesforce account 
    * 1.1. Edition: Enterprise Edition, Unlimited Edition, Developer Edition, Performance Edition.
       - If you don't have a Salesforce account, please register in the below link for free and testing purpose:
@@ -58,14 +58,14 @@ Please have a look at the activity input arguements:
 * LUIS_URL: please provide the LUIS AI Endpoint URL which you used to train for classification purpose.
 * MailAddress: your email address that the robot will work with.
 * MailFolder: your email folder that the robot will work with.
-* MailPassword (IMAP only): if you retreive email via IMAP, please provide email password.
-* MailServer (IMAP only): if you retreive email via IMAP, please provide IMAP mail server.
-* MailPort (IMAP only): if you retreive email via IMAP, please provide IMAP mail port.
+* MailPassword (IMAP only): if you retrieve email via IMAP, please provide email password.
+* MailServer (IMAP only): if you retrieve email via IMAP, please provide IMAP mail server.
+* MailPort (IMAP only): if you retrieve email via IMAP, please provide IMAP mail port.
 * SalesforceConsumerKey: please provide Salesforce Consumer Key, please see Getting Started section to know how to obtain it.
 * SalesforceConsumerSecret: please provide Salesforce Consumer Secret, please see Getting Started section to know how to obtain it.
 * SalesforceSecurityToken: please provide Salesforce Security Token, please see Getting Started section to know how to obtain it.
-* SalesforcePassword: please provide your Salesforce password for log in.
-* SalesforceUsername: please provide your Salesforce username for log in.
+* SalesforcePassword: please provide your Salesforce password for login.
+* SalesforceUsername: please provide your Salesforce username for login.
 * Output MailList/CaseList (optional): the output will be in DataTable type.
 
 ## Development note
