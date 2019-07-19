@@ -10,9 +10,9 @@ Please see the Introduction Youtube video:
 To get started with the DocuSign Activiy Pack, you'll need the followings:
 1. Salesforce account 
    * 1.1. Edition: Enterprise Edition, Unlimited Edition, Developer Edition, Performance Edition.
-   - If you don't have a Salesforce account, please register in the below link for free and testing purpose:
+      - If you don't have a Salesforce account, please register in the below link for free and testing purpose:
    https://developer.salesforce.com/signup
-   - If you already have a Salesforce account, please read the below guide to check your Salesforce edition:
+      - If you already have a Salesforce account, please read the below guide to check your Salesforce edition:
    https://help.salesforce.com/articleView?id=000334996&type=1
    * 1.2. Security Token: we need Salesforce security token to connect Salesforce account via API. Please check the below guide to get your security token which will be sent via email:
    https://webkul.com/blog/security-token-salesforce/
