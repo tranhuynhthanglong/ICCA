@@ -1,87 +1,33 @@
-# Intelligent Customer Communication Automation - ICCA
+# Intelligent Customer Communication Automation - ICCA activity package for UiPath
 Automation First: smoothen the communication with customers. 
 Artificial Intelligent: using state-of-the art Language Understanding Service. 
 Salesforce Integration: facilitating Open Cases in Salesforce Lightning Platform. 
 Automatically Categorizes: new cases and existing cases in Salesforce. 
+Please see the Introduction Youtube video:
+
 
 ## Getting Started
+To get started with the DocuSign Activiy Pack, you'll need the followings:
+1. Salesforce account
+1.1. Edition: Enterprise Edition, Unlimited Edition, Developer Edition, Performance Edition
+If you don't have a Salesforce account, please register in the below link for free and testing purpose:
+https://developer.salesforce.com/signup
+If you already have a Salesforce account, please read the below guide to check your Salesforce edition:
+https://help.salesforce.com/articleView?id=000334996&type=1
+1.2. Security Token: we need Salesforce security token to connect Salesforce account via API. Please check the below guide to get your security token which will be sent via email:
+https://webkul.com/blog/security-token-salesforce/
+1.3. Create connected apps and obtain Consumer Key and Consumer Secret.
+https://auth0.com/docs/connections/social/salesforce
+2. Email setup
+2.1. Via Outlook: if you want the robot to read and classify your email via Outlook, please ensure to setup email address in Outlook.
+2.2. Via IMAP protocol: please make sure your email account has enabled IMAP access including IMAP mail server and port.
+3. UiPath Orchestrator account (optional but recommended)
+Because the activity will use many important credential information for authentication, we recommend you to use UiPath Orchestrator Assets to store those credential information, especially when deploying to production.
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+## Repository guide
+The repository contains 3 folders:
+1. PUADemo2019: We prepared an UiPath project for testing our ICCA activity package. Please download and open in UiPath, so you can immediately use.
+2. Simple LUIS Query Classification: it contains our source UiPath project for each activity in the ICCA package.
+3. ICCA Activity Package: it contains our ICCA packages named "Simple_LUIS_Query_Classification.1.0.1-alpha.5.nupkg".
 
-### Prerequisites
-Software: UiPath Studio (community edition is fine).
-Activity packages:
-1. Option 1: Download our package "Simple_LUIS_Query_Classification.1.0.1-alpha.5.nupkg"
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
+### Working with the activity
