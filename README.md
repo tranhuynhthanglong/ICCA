@@ -1,10 +1,14 @@
 # Intelligent Customer Communication Automation - ICCA activity package for UiPath
-Automation First: smoothen the communication with customers. 
-Artificial Intelligent: using state-of-the art Language Understanding Service. 
-Salesforce Integration: facilitating Open Cases in Salesforce Lightning Platform. 
-Automatically Categorizes: new cases and existing cases in Salesforce. 
-Please see the Introduction Youtube video:
+Automation First: smoothen the communication with customers.
 
+Artificial Intelligent: using state-of-the art Language Understanding Service.
+
+Salesforce Integration: facilitating Open Cases in Salesforce Lightning Platform.
+
+Automatically Categorizes: new cases and existing cases in Salesforce. 
+
+Please see the Introduction Youtube video
+[![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
 
 ## Getting Started
 To get started with the DocuSign Activiy Pack, you'll need the followings:
