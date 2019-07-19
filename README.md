@@ -5,7 +5,7 @@ Artificial Intelligence: using state-of-the-art Language Understanding Service.
 
 Salesforce Integration: facilitating Open Cases in Salesforce Lightning Platform.
 
-Automatically Classification: classify new cases and existing cases in Salesforce. 
+Automatic Classification: classify new cases and existing cases in Salesforce. 
 
 Please see the Introduction Youtube video
 
