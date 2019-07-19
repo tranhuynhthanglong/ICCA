@@ -31,12 +31,12 @@ Because the activity will use many important credential information for authenti
 
 ## Repository guide
 The repository contains 3 folders:
-1. PUADemo2019: We prepared an UiPath project for testing our ICCA activity package. Please download and open in UiPath, so you can immediately use.
-2. Simple LUIS Query Classification: it contains our source UiPath project for each activity in the ICCA package.
-3. Activity package: it contains our ICCA packages named "Simple_LUIS_Query_Classification.1.0.1-alpha.5.nupkg".
+1. [PUA20ADemo2019](https://github.com/tranhuynhthanglong/ICCA/tree/master/PUA2019Demo "PUA20ADemo2019"): We prepared an UiPath project for testing our ICCA activity package. Please download and open in UiPath, so you can immediately use.
+2. [Simple LUIS Query Classification](https://github.com/tranhuynhthanglong/ICCA/tree/master/Simple%20LUIS%20Query%20Classification "Simple LUIS Query Classification"): it contains our source UiPath project for each activity in the ICCA package.
+3. [Activity package](https://github.com/tranhuynhthanglong/ICCA/tree/master/PUA2019Demo "Activity package"): it contains our ICCA packages named "Simple_LUIS_Query_Classification.1.0.1-alpha.5.nupkg".
 
 ## Working with the activity
-The below guide will be for PUA20ADemo2019 folder.
+The below guide will be for [PUA20ADemo2019](https://github.com/tranhuynhthanglong/ICCA/tree/master/Activity%20package "PUA20ADemo2019") folder.
 ### Config file
 We recommend you to utilize the Orchestrator Assets to store our credential information. Then we will use the "Config.xlsx" to guide the robot retreive those credential information.
 
@@ -70,7 +70,7 @@ Please have a look at the activity input arguements:
 
 ## Development note
 ### Source project
-Please check the source UiPath project in this folder Simple LUIS Query Classification
+Please check the source UiPath project in this folder [Simple LUIS Query Classification](https://github.com/tranhuynhthanglong/ICCA/tree/master/Simple%20LUIS%20Query%20Classification "Simple LUIS Query Classification").
 ### Other packages used
 Uipath Salesforce Lightning Connector: https://go.uipath.com/component/connector-for-salesforce-lightning-platform
 BalaReva.Excel.Activities: https://gallery.uipath.com/packages/BalaReva.Excel.Activities
