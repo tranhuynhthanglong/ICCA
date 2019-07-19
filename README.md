@@ -1,11 +1,11 @@
 # Intelligent Customer Communication Automation - ICCA activity package for UiPath
-Automation First: smoothen the communication with customers.
+Automation First: smoothen communication with customers.
 
-Artificial Intelligent: using state-of-the art Language Understanding Service.
+Artificial Intelligent: using state-of-the-art Language Understanding Service.
 
 Salesforce Integration: facilitating Open Cases in Salesforce Lightning Platform.
 
-Automatically Categorizes: new cases and existing cases in Salesforce. 
+Automatically Classification: classify new cases and existing cases in Salesforce. 
 
 Please see the Introduction Youtube video
 
