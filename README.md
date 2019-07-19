@@ -1,7 +1,7 @@
 # Intelligent Customer Communication Automation - ICCA activity package for UiPath
 Automation First: smoothen communication with customers.
 
-Artificial Intelligence: using state-of-the-art Language Understanding Service.
+Artificial Intelligence: using state-of-the-art Language Understanding Intelligent Service (LUIS).
 
 Salesforce Integration: facilitating Open Cases in Salesforce Lightning Platform.
 
@@ -26,7 +26,8 @@ To get started with the ICCA Activity Pack, you'll need the followings:
 2. Email setup
    * 2.1. Via Outlook: if you want the robot to read and classify your email via Outlook, please ensure to setup email address in Outlook.
    * 2.2. Via IMAP protocol: please make sure your email account has enabled IMAP access including IMAP mail server and port.
-3. UiPath Orchestrator account (optional but recommended)
+3. LUIS Endpoit URL: register an account [here](https://www.luis.ai/ "here") and start training your bot.
+4. UiPath Orchestrator account (optional but recommended)
 Because the activity will use many important credential information for authentication, we recommend you to use UiPath Orchestrator Assets to store those credential information, especially when deploying to production.
 
 ## Repository guide
