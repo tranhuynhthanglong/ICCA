@@ -48,20 +48,20 @@ Please have a look at the activity input arguements:
 
 ![Activity screenshot](https://github.com/tranhuynhthanglong/ICCA/blob/master/screenshot.png)
 
-*ExcelOutput: Boolean value. Default value = False. If you want to have an excel output listing all processed email and processing result, change value to "True".
-*ExcelOutPath (optional): please indicate the full path of output excel inclusive of extension ".xlsx". If it is left blank, output file will be on your desktop with naming convention as "EmailList/CaseList timestamp" with timestamp has format "YYYY-MM-DD HH-mm-ss".
-*LUIS_URL: please provide the LUIS AI Endpoint URL which you used to train for classification purpose.
-*MailAddress: your email address that the robot will work with.
-*MailFolder: your email folder that the robot will work with.
-*MailPassword (IMAP only): if you retreive email via IMAP, please provide email password.
-*MailServer (IMAP only): if you retreive email via IMAP, please provide IMAP mail server.
-*MailPort (IMAP only): if you retreive email via IMAP, please provide IMAP mail port.
-*SalesforceConsumerKey: please provide Salesforce Consumer Key, please see Getting Started section to know how to obtain it.
-*SalesforceConsumerSecret: please provide Salesforce Consumer Secret, please see Getting Started section to know how to obtain it.
-*SalesforceSecurityToken: please provide Salesforce Security Token, please see Getting Started section to know how to obtain it.
-*SalesforcePassword: please provide your Salesforce password for log in.
-*SalesforceUsername: please provide your Salesforce username for log in.
-*Output MailList/CaseList (optional): the output will be in DataTable type.
+* ExcelOutput: Boolean value. Default value = False. If you want to have an excel output listing all processed email and processing result, change value to "True".
+* ExcelOutPath (optional): please indicate the full path of output excel inclusive of extension ".xlsx". If it is left blank, output file will be on your desktop with naming convention as "EmailList/CaseList timestamp" with timestamp has format "YYYY-MM-DD HH-mm-ss".
+* LUIS_URL: please provide the LUIS AI Endpoint URL which you used to train for classification purpose.
+* MailAddress: your email address that the robot will work with.
+* MailFolder: your email folder that the robot will work with.
+* MailPassword (IMAP only): if you retreive email via IMAP, please provide email password.
+* MailServer (IMAP only): if you retreive email via IMAP, please provide IMAP mail server.
+* MailPort (IMAP only): if you retreive email via IMAP, please provide IMAP mail port.
+* SalesforceConsumerKey: please provide Salesforce Consumer Key, please see Getting Started section to know how to obtain it.
+* SalesforceConsumerSecret: please provide Salesforce Consumer Secret, please see Getting Started section to know how to obtain it.
+* SalesforceSecurityToken: please provide Salesforce Security Token, please see Getting Started section to know how to obtain it.
+* SalesforcePassword: please provide your Salesforce password for log in.
+* SalesforceUsername: please provide your Salesforce username for log in.
+* Output MailList/CaseList (optional): the output will be in DataTable type.
 
 ## Development note
 ### Source project
@@ -73,7 +73,7 @@ BalaReva.Excel.Activities: https://gallery.uipath.com/packages/BalaReva.Excel.Ac
 Long (Leon) Tran - Design / Development / Production / etc
 Tuan Pham - LUIS trainer / etc
 ## License
-This project is licensed under the Apache License 2.0 - see the https://github.com/tranhuynhthanglong/ICCA/blob/master/LICENSE file for details.
+This project is licensed under the Apache License 2.0 - see the ![LICENSE](https://github.com/tranhuynhthanglong/ICCA/blob/master/LICENSE) file for details.
 
 ## Acknowledgments
 Thank the wonderful UiPath Team for all useful resources in training courses and in the Webinar for developing Custom Activities.
