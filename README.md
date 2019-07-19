@@ -26,7 +26,7 @@ To get started with the ICCA Activity Pack, you'll need the followings:
 2. Email setup
    * 2.1. Via Outlook: if you want the robot to read and classify your email via Outlook, please ensure to setup email address in Outlook.
    * 2.2. Via IMAP protocol: please make sure your email account has enabled IMAP access including IMAP mail server and port.
-3. LUIS Endpoit URL: register an account [here](https://www.luis.ai/ "here") and start training your bot.
+3. LUIS Endpoit URL: register an account [here](https://www.luis.ai/ "luis.ai") and start training your bot.
 4. UiPath Orchestrator account (optional but recommended)
 Because the activity will use many important credential information for authentication, we recommend you to use UiPath Orchestrator Assets to store those credential information, especially when deploying to production.
 
@@ -83,7 +83,7 @@ BalaReva.Excel.Activities: https://gallery.uipath.com/packages/BalaReva.Excel.Ac
 - Cham Le - Development
 - Phuong Nguyen - Project Management
 ## License
-This project is licensed under the Apache License 2.0 - see the ![LICENSE](https://github.com/tranhuynhthanglong/ICCA/blob/master/LICENSE) file for details.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](https://github.com/tranhuynhthanglong/ICCA/blob/master/LICENSE) file for details.
 
 ## Acknowledgments
 Thank the wonderful UiPath Team for all useful resources in training courses and in the Webinar for developing Custom Activities.
