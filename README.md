@@ -9,7 +9,7 @@
 
 Please see the Introduction Youtube video
 
-[![Happy automation](https://img.youtube.com/vi/uCOiIYbV8W0/0.jpg)](https://youtu.be/uCOiIYbV8W0 "Happy automation")
+[![Happy automation](https://img.youtube.com/vi/7SG4oSfcsoM/0.jpg)](https://youtu.be/7SG4oSfcsoM "Happy automation")
 
 [Introduction slide](https://github.com/tranhuynhthanglong/ICCA/blob/master/ABeam_PowerUp2019.pptx "Introduction slide")
 
